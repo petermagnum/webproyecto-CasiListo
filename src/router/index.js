@@ -5,6 +5,11 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'Inicio',
+    component: () => import(/* webpackChunkName: "inicio" */ '../views/Inicio.vue')
+  },
+  {
     path: '/inicio',
     name: 'Inicio',
     component: () => import(/* webpackChunkName: "inicio" */ '../views/Inicio.vue')
